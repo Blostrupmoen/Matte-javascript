@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,71 +9,75 @@
 
   <style></style>
   <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
-<link rel="stylesheet" href="stylesheet.css">
+  <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="stylesheet.css">
 </head>
+
 <body>
-<h1 class="h1M">Den lille gangetabellen!
-</h1>
-<h2>Her kan du øve så mye du vil på den lille gangetabellen</h2>
+  <h1>Den lille gangetabellen!</h1>
+  <h2>Her kan du øve så mye du vil på den lille gangetabellen</h2>
 
-<section class="buttons">
+  <section class="buttons" ouiad="sdfiu">
 
-<div class=gang1></div>
-<button id="btn1" type="button" class="btn1 btn-primary" onclick="times1()">1-Gangen</button>
+    <div class=gang1></div>
+    <button id="btn1" type="button" class="btn btn-primary btnMultiply" times-table="1">1-Gangen</button>
 
-<div class=gang2></div>
-<button id="btn2" type="button" class="btn2 btn-primary" onclick="times2()">2-Gangen</button>
+    <div class=gang2></div>
+    <button id="btn2" type="button" class="btn btn-primary btnMultiply" times-table="2">2-Gangen</button>
 
-<div class=gang3></div>
-<button  type="button" class="btn3 btn-primary" onclick="times3()">3-Gangen</button>
+    <div class=gang3></div>
+    <button type="button" class="btn btn-primary btnMultiply" times-table="3">3-Gangen</button>
 
-<div class=gang4></div>
-<button type="button" class="btn4 btn-primary" onclick="times4()">4-Gangen</button>
+    <div class=gang4></div>
+    <button type="button" class="btn btn-primary btnMultiply" times-table="4">4-Gangen</button>
 
-<div class=gang5></div>
-<button type="button" class="btn5 btn-primary" onclick="times5()">5-Gangen</button>
+    <div class=gang5></div>
+    <button type="button" class="btn btn-primary btnMultiply" times-table="5">5-Gangen</button>
 
-<div class=gang6></div>
-<button type="button" class="btn6 btn-primary" onclick="times6()">6-Gangen</button>
+    <div class=gang6></div>
+    <button type="button" class="btn btn-primary btnMultiply" times-table="6">6-Gangen</button>
 
-<div class=gang7></div>
-<button type="button" class="btn7 btn-primary" onclick="times7()">7-Gangen</button>
+    <div class=gang7></div>
+    <button type="button" class="btn btn-primary btnMultiply" times-table="7">7-Gangen</button>
 
-<div class=gang8></div>
-<button type="button" class="btn8 btn-primary" onclick="times8()">8-Gangen</button>
+    <div class=gang8></div>
+    <button type="button" class="btn btn-primary btnMultiply" times-table="8">8-Gangen</button>
 
-<div class=gang9></div>
-<button type="button" class="btn9 btn-primary" onclick="times9()">9-Gangen</button>
+    <div class=gang9></div>
+    <button type="button" class="btn btn-primary btnMultiply" times-table="9">9-Gangen</button>
 
-<div class=gang10></div>
-<button type="button" class="btn10 btn-primary" onclick="times10()">10-Gangen</button>
+    <div class=gang10></div>
+    <button type="button" class="btn btn-primary btnMultiply" times-table="10">10-Gangen</button>
 
-<div></div>
-<button type="button" class="btn10 btn-primary" onclick="timesR()">Tilfeldig</button>
-</section>
-
-
-
-<section class="quiz">
-
-<p>Velg hvilket tall i gangetabellen du vil øve på, ved å trykke på knappene til venstre</p>
-  <p id="task"></p>
-
-<label for="input">Svar her:</label>
-
-<input id="inputAnswer" type="text">
+    <div>
+    <button type="button" class="btn btn-primary btnMultiply" times-table="0">Tilfeldig</button>
+    </div>
+  </section>
 
 
 
-<button type="button" class="btn12 btn-success" onclick="getAnswer()">Sjekk svar!</button>
-<p id="streak"></p>
+  <section class="quiz">
+
+    <p>Velg hvilket tall i gangetabellen du vil øve på, ved å trykke på knappene til venstre</p>
+    <p id="task"></p>
+    
+    <label for="input">Svar her:</label>
+    <input id="toggleRandom" type="hidden" value="false">
+    <input id="inputAnswer" type="text">
 
 
-</section>
+
+    <button type="button" class="btn12 btn-success" onclick="getAnswer()">Sjekk svar!</button>
+    <p id="streak">Svarrekke:</p>
+    <div id="star"><i class="bi bi-star-fill" hidden="true"></i></div>
+
+  </section>
 
 </body>
 
 <script src="index.js"></script>
+
 </html>
